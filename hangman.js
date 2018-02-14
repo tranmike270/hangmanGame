@@ -73,26 +73,26 @@ document.onkeyup = function (event) {
 
         //Turning choice into an array and printing each index to a new div
         var wordDiv = document.getElementById("word");
-        for (var i = 0; i < animeChoice.length; i++) {
+        for (var count = 0; count < animeChoice.length; count++) {
             var letter = animeChoice[i].toLowerCase();
             //Takes into account instances where theree is a space in the animeChoice
             if (letter === " ") {
                 var divLetter = document.createElement("div");
-                divLetter.id = i;
+                divLetter.id = count;
                 divLetter.className = "letterBox space";
                 wordDiv.appendChild(divLetter);
-                var letterBox = document.getElementById(i);
+                var letterBox = document.getElementById(count);
                 var letterSpan = document.createElement("p");
-                letterSpan.innerHTML = animeChoice[i];
+                letterSpan.innerHTML = animeChoice[count];
                 letterBox.appendChild(letterSpan);
                 letterCount++;      //Adds a count for each space
             }
 
             var divLetter = document.createElement("div");
             divLetter.className = "letterBox";              //Gives each div box a class so it can be deleted later on
-            divLetter.id = i;                           //Give each box an ID based on the index to attach the correct letter to the box
+            divLetter.id = count;                           //Give each box an ID based on the index to attach the correct letter to the box
             wordDiv.appendChild(divLetter);
-            var letterBox = document.getElementById(i);
+            var letterBox = document.getElementById(count);
             var letterSpan = document.createElement("p");
             // Giving the created letter a specific class according to the letter so it can be accessed later
             switch (letter) {
