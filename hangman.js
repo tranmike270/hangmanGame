@@ -175,7 +175,7 @@ document.onkeyup = function (event) {
                     letterSpan.className = "z";
                     break;
             }
-            letterSpan.innerHTML = animeChoice[i];
+            letterSpan.innerHTML = animeChoice[count];
             letterBox.appendChild(letterSpan);
 
 
