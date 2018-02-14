@@ -74,7 +74,7 @@ document.onkeyup = function (event) {
         //Turning choice into an array and printing each index to a new div
         var wordDiv = document.getElementById("word");
         for (var count = 0; count < animeChoice.length; count++) {
-            var letter = animeChoice[i].toLowerCase();
+            var letter = animeChoice[count].toLowerCase();
             //Takes into account instances where theree is a space in the animeChoice
             if (letter === " ") {
                 var divLetter = document.createElement("div");
