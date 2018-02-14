@@ -29,7 +29,7 @@ var wins = 0;
 var play = true;
 var animeChoice = String;
 var chances = 12;
-var a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z = Number;
+var a, b, c, d, e, f, g, h, li, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z = Number;
 var letterCount;
 var audio;
 // To start the game
@@ -46,7 +46,7 @@ document.onkeyup = function (event) {
         f = 1;
         g = 1;
         h = 1;
-        i = 1;
+        li = 1;
         j = 1;
         k = 1;
         l = 1;
@@ -297,9 +297,9 @@ document.onkeyup = function (event) {
                     }
                     break;
                 case 'i':
-                    if (i === 1) {
+                    if (li === 1) {
                         chances--;
-                        i--;
+                        li--;
                         var guessesDiv = document.getElementById("remainingNum");
                         guessesDiv.innerHTML = chances;
                         var wrongGuess = document.getElementById("guessedLetters")
