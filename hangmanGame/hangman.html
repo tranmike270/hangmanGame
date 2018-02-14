@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <!-- Linking BootStrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- Linking Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sirin+Stencil|Tangerine:700" rel="stylesheet">
     <!-- Linking personal stylesheet -->
@@ -15,47 +16,60 @@
 
 
 </head>
-<body class = "container-fluid" id="background" >
-    <header class = "row">
-        <h1 class = "col-lg-12" id = "header">HANGMAN</h1>
-        <h2 class = "col-lg-12" id = "animeHead">Anime Edition</h2>
-        <!-- <br> <br>
-        <hr class = "style-eight"> -->
+
+<body class="container-fluid" id="background">
+    <header class="row">
+        <h1 class="col-lg-12" id="header">HANGMAN</h1>
+        <h2 class="col-lg-12" id="animeHead">Anime Edition</h2>
     </header>
 
-    <section class = "row">
-       <!-- Put anime name here -->
-    </section> 
-    <section class = "row justify-content-md-center" id = "contentBox">
-        <div class = "col-lg-3" id = "colLeft">
-        <!-- Put information about anime here -->
+    <section class="row justify-content-md-center">
+        <div id="animeName"></div>
+        <!-- Put anime name here -->
+    </section>
+    <section class="row justify-content-md-center" id="contentBox">
+        <div class="col-lg-3" id="colLeft">
+            <!-- Put information about anime here -->
+            <div class="row">
+                <div class="col-lg-12" id="information"></div>
+                <div class="col-lg-12" id = "titles"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="synopsis"></div>
+                <div class="col-lg-12" id = "about"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="mainCharacter"></div>
+                <div class = "col-lg-12" id = "characters"></div>
+            </div>
         </div>
-        <div class = "col-lg-3" id = "colRight">
-            <div class = "row">
-                <div class = "col-lg-12" id = "instructions">Press any key to start guessing!!</div>
+        <div class="col-lg-3" id="colRight">
+            <div class="row">
+                <div class="col-lg-12" id="instructions">Press any key to start guessing!!</div>
             </div>
-            <div class = "row" id = "winCount">
-                <div class = "col-lg-12" id = "win">Wins</div>
-                <div class = "col-lg-12" id = "count">0</div>
+            <div class="row" id="winCount">
+                <div class="col-lg-12" id="win">Wins</div>
+                <div class="col-lg-12" id="count">0</div>
             </div>
-            <div class = "row">
-                <div class = "col-lg-12" id = "currentWord">Current Word</div>
-                <div class = "col-lg-12" id = "word"></div>
+            <div class="row">
+                <div class="col-lg-12" id="currentWord">Current Word</div>
+                <div class="row justify-content-md-center" id="word"></div>
             </div>
-            <div class = "row">
-                <div class = "col-lg-12" id = "remainingSentence">Number of guesses remaining</div>
-                <div class = "col-lg-12" id = "remainingNum"></div>
+            <div class="row">
+                <div class="col-lg-12" id="remainingSentence">Number of guesses remaining</div>
+                <div class="col-lg-12" id="remainingNum"></div>
             </div>
-            <div class = "row">
-                <div class = "col-lg-12" id = "guessedSentence">Letters already guessed</div>
-                <div class = "col-lg-12" id = "guessedLetters"></div>
+            <div class="row">
+                <div class="col-lg-12" id="guessedSentence">Letters already guessed</div>
+                <div class="col-lg-12" id="guessedLetters"></div>
             </div>
-            
+
         </div>
     </section>
 
 
     <script type="text/javascript" src="hangman.js"></script>
-    
+
 </body>
+
 </html>
