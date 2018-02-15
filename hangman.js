@@ -1,26 +1,26 @@
 var anime = ["Your Lie In April",
-    "  Bleach",
-    "  Naruto",
-    "  Guilty  Crown",
-    "  Haikyuu",
+    "Bleach",
+    "Naruto",
+    "Guilty Crown",
+    "Haikyuu",
     "Yuri On Ice",
-    "  Death   Parade",
+    "Death Parade",
     "Psycho Pass",
     "Dragon Ball Z",
     "Angel Beats",
-    " No Game No Life",
-    "  Hunter X Hunter",
+    "No Game No Life",
+    "Hunter X Hunter",
     "Gundam SEED",
     "Food Wars",
-    " My Hero  Academia",
-    " Death Note",
+    "My Hero Academia",
+    "Death Note",
     "Fate Series",
     //Will add at another date... plus others
-    //   "Attack OnTitan",
-    //  "One PunchMan",
+    //   "Attack On Titan",
+    //  "One Punch Man",
     //  "Charlotte",
     //  "Your Name",
-    //  " Re Zero",
+    //  "Re Zero",
     //  "Kuroko no Basket"
 ]
 
@@ -79,7 +79,7 @@ document.onkeyup = function (event) {
             if (letter === " ") {
                 var divLetter = document.createElement("div");
                 divLetter.id = count;
-                divLetter.className = "letterBox space";
+                divLetter.className = "letterBox space col-lg-12";
                 wordDiv.appendChild(divLetter);
                 var letterBox = document.getElementById(count);
                 var letterSpan = document.createElement("p");
@@ -809,19 +809,19 @@ function changeBackground(string) {
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/yourlieinaprilBG.jpg')";
 
             break;
-        case '  Bleach':
+        case 'Bleach':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/bleachBG.jpg')";
 
             break;
-        case '  Naruto':
+        case 'Naruto':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/narutoBG.jpg')";
 
             break;
-        case '  Guilty  Crown':
+        case 'Guilty Crown':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/guiltycrownBG.png')";
 
             break;
-        case '  Haikyuu':
+        case 'Haikyuu':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/haikyuuBG.jpg')";
 
             break;
@@ -829,7 +829,7 @@ function changeBackground(string) {
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/yurioniceBG.jpg')";
 
             break;
-        case '  Death   Parade':
+        case 'Death Parade':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/deathparadeBG.jpg')";
 
             break;
@@ -845,11 +845,11 @@ function changeBackground(string) {
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/angelbeatsBG.jpg')";
 
             break;
-        case ' No Game No Life':
+        case 'No Game No Life':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/nogamenolifeBG.jpg')";
 
             break;
-        case '  Hunter X Hunter':
+        case 'Hunter X Hunter':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/hunterxhunterBG.jpg')";
 
             break;
@@ -861,11 +861,11 @@ function changeBackground(string) {
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/foodwarsBG.png')";
 
             break;
-        case ' My Hero  Academia':
+        case 'My Hero Academia':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/myheroBG.png')";
 
             break;
-        case ' Death Note':
+        case 'Death Note':
             document.getElementById("background").style.backgroundImage = "url('Wallpapers/deathnoteBG.jpg')";
 
             break;
@@ -886,25 +886,25 @@ function playMusic(string) {
             return audio;
 
             break;
-        case '  Bleach':
+        case 'Bleach':
             var audio = new Audio('Music/bleachMusic.mp3');
             audio.play();
             return audio;
 
             break;
-        case '  Naruto':
+        case 'Naruto':
             var audio = new Audio('Music/narutoMusic.mp3');
             audio.play();
             return audio;
 
             break;
-        case '  Guilty  Crown':
+        case 'Guilty Crown':
             var audio = new Audio('Music/guiltycrownMusic.mp3');
             audio.play();
             return audio;
 
             break;
-        case '  Haikyuu':
+        case 'Haikyuu':
             var audio = new Audio('Music/haikyuuMusic.mp3');
             audio.play();
             return audio;
@@ -916,7 +916,7 @@ function playMusic(string) {
             return audio;
 
             break;
-        case '  Death   Parade':
+        case 'Death Parade':
             var audio = new Audio('Music/deathparadeMusic.mp3');
             audio.play();
             return audio;
@@ -940,13 +940,13 @@ function playMusic(string) {
             return audio;
 
             break;
-        case ' No Game No Life':
+        case 'No Game No Life':
             var audio = new Audio('Music/nogamenolifeMusic.mp3');
             audio.play();
             return audio;
 
             break;
-        case '  Hunter X Hunter':
+        case 'Hunter X Hunter':
             var audio = new Audio('Music/hunterxhunterMusic.mp3');
             audio.play();
             return audio;
@@ -964,13 +964,13 @@ function playMusic(string) {
             return audio;
 
             break;
-        case ' My Hero  Academia':
+        case 'My Hero Academia':
             var audio = new Audio('Music/myheroMusic.mp3');
             audio.play();
             return audio;
 
             break;
-        case ' Death Note':
+        case 'Death Note':
             var audio = new Audio('Music/deathnoteMusic.mp3');
             audio.play();
             return audio;
@@ -1016,7 +1016,7 @@ function animeInfo(string) {
             characters.innerHTML = "Arima, Kousei <br> Miyazono, Kaori <br> Sawabe,Tsubaki <br> Watari, Ryouta";
 
             break;
-        case '  Bleach':
+        case 'Bleach':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Bleach<h3>";
@@ -1040,7 +1040,7 @@ function animeInfo(string) {
             characters.innerHTML = "Kurosaki, Ichigo <br> Kuchiki, Rukia <br> Inoue, Orihime <br> Ishida, Uryuu <br> Sado, Yasutora";
 
             break;
-        case '  Naruto':
+        case 'Naruto':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Naruto<h3>";
@@ -1064,7 +1064,7 @@ function animeInfo(string) {
             characters.innerHTML = "Uzimaki, Naruto <br> Uchiha, Sasuke <br> Haruno, Sakura <br> Hatake, Kakashi";
 
             break;
-        case '  Guilty  Crown':
+        case 'Guilty Crown':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Guilty Crown<h3>";
@@ -1088,7 +1088,7 @@ function animeInfo(string) {
             characters.innerHTML = "Ouma, Shuu <br> Yuzuriha, Inori <br> Tsutsugami, Gai";
 
             break;
-        case '  Haikyuu':
+        case 'Haikyuu':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Haikyuu!<h3>";
@@ -1136,7 +1136,7 @@ function animeInfo(string) {
             characters.innerHTML = "Nikiforov, Victor <br> Katsuki, Yuri <br> Plisetsky, Yuri";
 
             break;
-        case '  Death   Parade':
+        case 'Death Parade':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Death Parade<h3>";
@@ -1232,7 +1232,7 @@ function animeInfo(string) {
             characters.innerHTML = "Tachibana, Kanade <br> Nakamura, Yuri <br> Yui <br> Otonashi, Yuzuru <br> Hinata, Hideki";
 
             break;
-        case ' No Game No Life':
+        case 'No Game No Life':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>No Game, No Life<h3>";
@@ -1256,7 +1256,7 @@ function animeInfo(string) {
             characters.innerHTML = "Sora <br> Shiro <br> Dola, Stephanie";
 
             break;
-        case '  Hunter X Hunter':
+        case 'Hunter X Hunter':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Hunter X Hunter<h3>";
@@ -1328,7 +1328,7 @@ function animeInfo(string) {
             characters.innerHTML = "Yukihira, Souma <br> Nakiri, Erina <br> Tadokoro, Megumi";
 
             break;
-        case ' My Hero  Academia':
+        case 'My Hero Academia':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>My Hero Academia<h3>";
@@ -1352,7 +1352,7 @@ function animeInfo(string) {
             characters.innerHTML = "Midoriya, Izuku <br> Bakugou, Katsuki <br> Uraraka, Ochako <br> Iida, Tenya <br> All Might";
 
             break;
-        case ' Death Note':
+        case 'Death Note':
             var animeName = document.getElementById("animeName");
             animeName.className = "nameOfAnime";
             animeName.innerHTML = "<h3>Death Note<h3>";
@@ -1446,3 +1446,50 @@ function stopSong() {
 
     audio.pause();
 }
+
+// Creating volume bar
+
+$(function() {
+ 
+    var slider = $('#slider'),
+      tooltip = $('.tooltip');
+   
+    tooltip.hide();
+   
+    slider.slider({
+      range: "min",
+      min: 1,
+      value: 35,
+   
+      start: function(event,ui) {
+        tooltip.fadeIn('fast');
+      },
+   
+      slide: function(event, ui) {
+   
+        var value = slider.slider('value'),
+          volume = $('.volume');
+   
+        tooltip.css('left', value).text(ui.value);
+   
+        if(value <= 5) { 
+          volume.css('background-position', '0 0');
+        } 
+        else if (value <= 25) {
+          volume.css('background-position', '0 -25px');
+        } 
+        else if (value <= 75) {
+          volume.css('background-position', '0 -50px');
+        } 
+        else {
+          volume.css('background-position', '0 -75px');
+        };
+   
+      },
+   
+      stop: function(event,ui) {
+        tooltip.fadeOut('fast');
+      },
+    });
+   
+  });

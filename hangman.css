@@ -100,15 +100,22 @@ p {
     
 }
 .letterBox {
-    display: inline-block;
+    display: inline;
     margin: 0px 5px;
     border-bottom: 3px solid white;
 }
 .space {
-    display: inline-block;
+    display: block;
+    clear: both;
     border: none;
 }
 
 .correct {
     visibility: visible;
 }
+
+
+/* CSS for volume bar
+*/
+
+
