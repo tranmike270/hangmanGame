@@ -2,7 +2,7 @@
   {
     "username": "sorasreign",
     "password": "nightload5",
-    "wins": 5,
+    "wins": 7,
     "loss": 30
   },
   {
