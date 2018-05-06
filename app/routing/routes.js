@@ -117,19 +117,14 @@ router.post("/updateInfo/:username", function(req,res){
     
                 var leaders = JSON.parse(data);
 
-                for(var j = 0; j < leaders.length; j++){
-                    var index;
-                    for(var i = 0; i < accounts.length; i++){
-                        var ratio = (accounts[i].wins * 100) / (accounts[i].loss + accounts[i].wins)
-                        if(ratio > leaders[j].winRatio && (accounts[i].wins + accounts[i].loss >= 10)){
-                            leaders[j].holder = accounts[i].username;
-                            leaders[j].winRatio = ratio;
-                            index = i;
-                        }
-                    }
+                accounts.sort(function(b,a){
+                    return ((a.wins * 100) / (a.wins + a.loss) - ((b.wins * 100) / (b.wins + b.loss)));
+                });
 
-                    accounts.splice(index,1);
-                }
+                for(var i = 0; i < leaders.length;i++){
+                    leaders[i].holder = accounts[i].username;
+                    leaders[i].winRatio = ((accounts[i].wins * 100) / (accounts[i].wins + accounts[i].loss))
+                };
 
 
                 

@@ -2,8 +2,8 @@
   {
     "username": "sorasreign",
     "password": "nightload5",
-    "wins": 20,
-    "loss": 12
+    "wins": 5,
+    "loss": 30
   },
   {
     "username": "tsprimo",
