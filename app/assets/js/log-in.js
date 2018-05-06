@@ -103,7 +103,7 @@ $(document).ready(function(){
 
     //For username
     $(myUserNameInput).keyup(function(){
-        if($(myUserNameInput).val().length >= 6 && $(myUserNameInput).val().length <= 10){
+        if($(myUserNameInput).val().length >= 6 && $(myUserNameInput).val().length <= 12){
             $(uLength).removeClass('invalid');
             $(uLength).addClass('valid');
         }else {
