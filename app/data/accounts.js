@@ -8,7 +8,13 @@
   {
     "username": "tsprimo",
     "password": "nightload5",
-    "wins": 11,
-    "loss": 6
+    "wins": 3,
+    "loss": 25
+  },
+  {
+    "username": "theone",
+    "password": "Nightload5",
+    "wins": 6,
+    "loss": 30
   }
 ]

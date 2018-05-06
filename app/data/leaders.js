@@ -1,17 +1,17 @@
 [
   {
     "rank": 1,
-    "holder": "tsprimo",
-    "winRatio": 83.33333333333333
+    "holder": "N/A",
+    "winRatio": 0
   },
   {
     "rank": 2,
-    "holder": "tsprimo",
-    "winRatio": 75
+    "holder": "N/A",
+    "winRatio": 0
   },
   {
     "rank": 3,
-    "holder": "sorasreign",
-    "winRatio": 62.06896551724138
+    "holder": "N/A",
+    "winRatio": 0
   }
 ]
