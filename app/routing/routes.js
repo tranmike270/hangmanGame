@@ -121,6 +121,13 @@ router.post("/updateInfo/:username", function(req,res){
                     return ((a.wins * 100) / (a.wins + a.loss) - ((b.wins * 100) / (b.wins + b.loss)));
                 });
 
+                for(var i =0; i < accounts.length;i++){
+                    if(accounts[i].wins + accounts[i].loss > 10){
+                        accounts.splice(i,1);
+                        i--;
+                    }
+                };
+                
                 for(var i = 0; i < leaders.length;i++){
                     leaders[i].holder = accounts[i].username;
                     leaders[i].winRatio = ((accounts[i].wins * 100) / (accounts[i].wins + accounts[i].loss))
