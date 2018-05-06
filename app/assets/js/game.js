@@ -161,7 +161,7 @@ function beginGame(wordData){
     $(document).keyup(function(event){
         var keyPressed = event.key.toUpperCase();
 
-        if((keyPressed.match(/[A-Z]/g)) && (chances !== 0) && (currentWord !== wordDisplayed) && (guessedLetters.includes(keyPressed) === false) && (keyPressed !== "CONTROL" && keyPressed !== "ALT" && keyPressed !== "ENTER")){
+        if((keyPressed.match(/[A-Z]/g)) && (chances !== 0) && (currentWord !== wordDisplayed) && (guessedLetters.includes(keyPressed) === false) && (keyPressed.length <= 1)){
             theWord.guess(event.key);
             var afterGuessWord = theWord.displayWord();
     
