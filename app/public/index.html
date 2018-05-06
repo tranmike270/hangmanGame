@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <!-- Linking BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- FontAwesome -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Sirin+Stencil|Tangerine:700" rel="stylesheet">
+    <!-- Linking personal stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../assets/js/log-in.js"></script>
+    <script type="text/javascript" src="../assets/js/game.js"></script>
+
+</head>
+
+<body class="container-fluid" id="background">
+    <header class="row">
+        <h1 class="col-lg-12" id="header">HANGMAN</h1>
+        <h2 class="col-lg-12" id="animeHead">Anime Edition</h2>
+    </header>
+
+    <section class="row justify-content-md-center">
+        <h3 id="animeName" class="nameOfAnime"></h3>
+        <!-- Put anime name here -->
+    </section>
+    <section class="row justify-content-md-center" id="contentBox">
+        <div class="col-lg-2 col-md-0">
+
+        </div>
+        <div class="col-lg-3 col-md-0 contentBox" id="colLeft">
+            <!-- Put information about anime here -->
+            <div class="row">
+                <div class="col-lg-12" id="information"></div>
+                <div class="col-lg-12" id="titles"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="synopsis"></div>
+                <div class="col-lg-12" id="about"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="mainCharacter"></div>
+                <div class="col-lg-12" id="characters"></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-12 contentBox" id="colRight">
+            <div class="row">
+                <div class="col-lg-12" id="instructions">Press 'Enter' to start guessing!!</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="currentWord">Current Word</div>
+            </div>
+            <div class="row justify-content-md-center" id="word"></div>
+
+            <div class="row">
+                <div class="col-lg-12" id="remainingSentence">Number of guesses remaining</div>
+                <div class="col-lg-12" id="remainingNum"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12" id="guessedSentence">Letters already guessed</div>
+                <div class="col-lg-12" id="guessedLetters"></div>
+            </div>
+
+        </div>
+        <div class="col-lg-3 col-md-12" id="user-info-container">            
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6 col-sm-12 whiteBorder" id="user-info">
+                                <div class="row info-title justify-content-md-center" id="info">
+                                    User Infomation
+                                </div>
+                                <hr>
+                                <div class="row justify-content-md-center" id="info-username">
+                   
+                                </div>
+                                <div class="row justify-content-md-center" id="info-stats">
+                                    Wins : <span id='win-count'></span> Loss : <span id="loss-count"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 whiteBorder" id="leaderboards">
+                                <div class="row info-title justify-content-md-center">
+                                    Leaders in Win %
+                                </div>
+                                <hr>
+                                <div class="row justify-content-md-center">
+                                    <b>1.</b> 
+                                </div>    
+                                <div class="row justify-content-md-center">
+                                    <span data-rank="1"></span>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <b>2.</b> 
+                                </div>    
+                                <div class="row justify-content-md-center">
+                                    <span data-rank="2"></span>
+                                </div>
+                                <div class="row justify-content-md-center">
+                                    <b>3.</b> 
+                                </div>    
+                                <div class="row justify-content-md-center">
+                                    <span data-rank="3"></span>
+                                </div>             
+                            </div>
+                        </div>
+        </div>
+    </section>
+
+    <!-- Volume Bar -->
+
+    <div class="row justify-content-md-center" id="volume-container">
+        <audio id="song" controls autoplay>
+            <source id="songSrc" src="" type="audio/mpeg">
+        </audio>
+    </div>
+    <!-- Log-In Prompt -->
+    <div class="log-in-Text-Color modal fade " id="log-inModal" tabindex="-1" role="dialog" aria-labelledby="log-inlLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" >Log-In to keep your win record!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-md-center" id="log-inForm">
+                    <form id="log-in">
+                        <div class="row alerts" id="log-in-error">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Log-In</button>
+                    </form>
+                </div>
+              
+            </div>
+            <div class="modal-footer">
+              <div class="row justify-content-md-center" id="alt-options">
+                <small>You also have the option to play without keeping a record, just press the X at the top right corner.</small> 
+                <br>     
+                <button id="sign-up-prompt" type="button" class="btn btn-info ">Sign-Up!</button>
+                <h5 class="alt-op"> Sign-Up if you don't have an account!!</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sign-up Prompt -->
+      <div class="log-in-Text-Color modal fade " id="sign-upModal" tabindex="-1" role="dialog" aria-labelledby="sign-uplLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" >Sign-Up to keep a win record!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-md-center" id="sign-upForm">
+                        <div class="row alerts" id="message" >
+                            <h7>Username must meet the following:</h5>
+                            <p id="userLength" class="invalid">Minimum <b>6 characters</b>; Maximum <b>10 characters</b></p>
+                            <h7>Password must meet the following:</h5>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>6 characters</b></p>
+                        </div>
+                        <div class="row alerts" id="taken" >
+                            <p class="invalid"><b>That username has been taken. Please choose a different one.</b></p>
+                        </div>
+                        <form id="sign-up">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control sign-up-input"  id="username" name="username" pattern=".{6,10}" title="Username must be at least 6 characters and no more than 10"required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control sign-up-input" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                            </div>
+                            <button type="submit" class="btn btn-secondary">Sign-Up</button>
+                            <small class="form-text text-muted">After signing up, you'll be redirected to the log-in page</small>
+                        </form>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                    <div class="row justify-content-md-center" id="alt-options">
+                        <small>You also have the option to play without keeping a record, just press the X at the top right corner.</small> 
+                        <br>     
+                        <button id="log-in-prompt" type="button" class="btn btn-info ">Log-In!</button>
+                        <h5 class="alt-op"> Already have an account? Press Log-in!</h5>
+                    </div>
+                
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+
+</body>
+
+</html>

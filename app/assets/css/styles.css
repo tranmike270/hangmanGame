@@ -1,0 +1,242 @@
+/* Google Fonts
+font-family: 'Tangerine', cursive; //animeHead
+font-family: 'Alfa Slab One', cursive; //HANGMAN
+font-family: 'Sirin Stencil', cursive; //Everything else
+*/
+
+.log-in-Text-Color {
+    color: black;
+}
+.modal {
+    text-align: center;
+}
+body {
+    color: white;
+}
+
+.alt-op{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* The message box will show once the user begins to input information */
+
+.alerts {
+    display: none;
+    background: #f1f1f1;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+#message h7 {
+    font-size: 13px;
+    font-weight: bold;
+}
+.alerts p {
+    font-size: 9px;
+    margin: 3px;
+}
+    /* Add Green text color and a checkmark when meet reqs */
+.valid {
+    color: green;
+}
+
+.valid:before{
+    position: relative;
+    left: -10px;
+    content: '✔';
+}
+   /* Add Red text color and an x when not meet reqs yet */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: '✖';
+}
+
+
+
+
+
+/* CSS for Header */
+
+h3 {
+    font-family: 'Tangerine', cursive; 
+    font-size: 100px;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+#background {
+    background-color:black;
+    background-size: 100%;
+
+
+}
+
+#header {
+    font-family: 'Alfa Slab One', cursive; 
+
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+
+    font-size: 150px;
+    text-align: center;
+}
+
+#animeHead {
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    color: blue;
+    letter-spacing: 20px;
+    font-size: 175px;
+    font-style: oblique;
+    position: absolute;
+    z-index: 100;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+ 
+}
+
+/* CSS for Game body */
+.nameOfAnime {
+    padding-left: 10px;
+    padding-right: 15px;
+    background: rgba(0 ,0 ,0, .5);
+}
+
+#contentBox {
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+   
+}
+
+.contentBox {
+    border: 7px double white;
+    background: rgba(0 ,0 ,0, .5);
+}
+
+.title {
+    margin-left: 20px;
+    font-size: 25px;
+}
+.synopsis {
+    margin-left: 20px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.characters {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#colRight{
+    border: 7px double white; 
+    text-align: center;
+    background: rgba(0 ,0 ,0, .5);
+}
+
+#word {
+    font-size: 30px;
+    padding: 0px 25px;
+}
+
+.letterBox {
+    display: inline;
+    margin: 0px 5px;
+    border-bottom: 3px solid white;
+}
+.space {
+    display: block;
+    clear: both;
+    border: none;
+}
+
+.correct {
+    visibility: visible;
+}
+
+
+
+/* CSS for user information */
+#user-info-container{
+    /* position: fixed;
+    right: 3%;
+    top : 27%; */
+    margin: 0px 15px;
+  
+}
+.whiteBorder {
+    border: 7px double white; 
+    text-align: center;
+    padding: 10px 14px 10px 18px;
+    background: rgba(0 ,0 ,0, .5);
+    
+}
+
+#info {
+    padding: 10px 0px 20px 10px;
+}
+.info-title {
+    font-weight: bold;
+    font-size : 20px;
+    text-align: center;
+}
+
+hr {
+    margin: 0px 0px 0px -10px;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+#info-username {
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#info-stats{
+    font-size: 15px;
+
+}
+span {
+    margin: 0px 5px;
+    font-weight: bold;
+}
+/* CSS for volume bar
+*/
+
+#volume-container{
+    visibility: hidden;
+    margin: 20px;
+}
+
+
+
+@media only screen  and (max-width : 1080px){
+    /* Styles */
+    #animeHead {
+        letter-spacing: 10px;
+        font-size:165px;
+    }
+
+
+}
+@media only screen  and (max-width : 992px){
+    /* Styles */
+
+    #animeHead{
+        position:relative;
+        text-align: center;
+    }
+    #colLeft{
+        display: none;
+    }
+
+
+}
+
