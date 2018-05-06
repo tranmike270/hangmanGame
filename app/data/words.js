@@ -131,7 +131,7 @@
     },
     {
         "word":"Shokugeki no Souma",
-        "audioPath": "../assets/music/oodwarsMusic.mp3",
+        "audioPath": "../assets/music/foodwarsMusic.mp3",
         "backgroundUrl": "https://images3.alphacoders.com/648/thumb-1920-648258.png",
         "description": {
             "titles": ["Shokugeki no Souma","Food Wars"],
