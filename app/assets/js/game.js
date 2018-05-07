@@ -281,6 +281,11 @@ function displayWinnings(background, audio, information){
             $("#characters").append(chara);
         };
 
+        // Adding Link to wallpaper
+
+        $("#wallpaper").html("<h4>Link to Wallpaper</h4>")
+
+        $("#link").html("<a href='"+background+"' target='_blank'> Click Here for the wallpaper! </a>")
     //Adding the source to the audio element
 
    

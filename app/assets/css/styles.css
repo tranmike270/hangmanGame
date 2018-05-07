@@ -162,7 +162,11 @@ h4 {
     visibility: visible;
 }
 
-
+a {
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+}
 
 /* CSS for user information */
 #user-info-container{
