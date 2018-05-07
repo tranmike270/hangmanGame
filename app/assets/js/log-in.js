@@ -1,9 +1,16 @@
 $(document).ready(function(){
+    var options = {
+        backdrop : 'static',
+        keyboard : false,
+      }
+    $("#log-inModal").modal(options);
+
     //Opens up log-in prompt on page load
     $("#log-inModal").modal('toggle');
 
     // Toggles sign-up modal
     $("#sign-up-prompt").on('click', function(event){
+        $("#sign-upModal").modal(options);
         $("#log-inModal").modal('toggle');
         $("#sign-upModal").modal('toggle');
     });
@@ -19,6 +26,8 @@ $(document).ready(function(){
     
         prepareGame("N/A", 0 ,0);
     });
+
+
     //Log-in
     $("#log-in").on('submit', function(event){
         event.preventDefault();
