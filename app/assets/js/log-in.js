@@ -31,10 +31,8 @@ $(document).ready(function(){
         $.ajax('/login/' + username, { 
             type: 'POST',
             data: account,
-            success: function(res){
-                
-                
-                switch(res){
+            success: function(response){
+                switch(response){
                     case "Incorrect":
                         $("#log-in-error").css("display", "block");
                         $("#log-in-error").html("<h6 class='invalid'> Password does not match the username. </h6>");
@@ -44,6 +42,7 @@ $(document).ready(function(){
                         $("#log-in-error").html("<h6 class='invalid'> Username does not exist. </h6>");
                     break;
                     default:
+                        var res = response[0];
                         $("#log-inModal").modal('toggle');
                         prepareGame(res.username, res.wins, res.loss);
                     break;

@@ -1,0 +1,22 @@
+DROP DATABASE IF EXISTS hangmanAnimeE_db;
+CREATE DATABASE hangmanAnimeE_db;
+USE hangmanAnimeE_db;
+
+
+CREATE TABLE IF NOT EXISTS accounts (
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(12) UNIQUE NOT NULL,
+    password VARCHAR(244) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+CREATE TABLE IF NOT EXISTS user_stats (
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(12) UNIQUE NOT NULL,
+    wins INT DEFAULT 0,
+    loss INT DEFAULT 0,
+    PRIMARY KEY (id)
+);
+
+

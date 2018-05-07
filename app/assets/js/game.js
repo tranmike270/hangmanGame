@@ -5,7 +5,7 @@ var theWord;
 var user;
 var wins;
 var loss;
-
+var wordsFinished = [];
 
 
 function prepareGame(username,winCount, lossCount){
@@ -25,16 +25,10 @@ function prepareGame(username,winCount, lossCount){
     $(document).keyup(function(event){
         if((currentWord === undefined || chances === 0 || currentWord == wordDisplayed) && (event.keyCode === 13)){
             $("#instructions").empty();
-             // Call to back-end to fetch word data
-            $.ajax('/newWord', {
-                type: "GET",
-                success: function(data){
-                    // Once we get the word pass the data into function to begin the game! Also resetting any global variables
-                    $(document).unbind('keyup');
-                    beginGame(data);
 
-                }
-            });
+            // Runs function to pick the word
+            pickWord();
+
             
         }
     })
@@ -47,12 +41,17 @@ function printLeaders(){
     $.ajax('/leaders', {
         type: "GET",
         success: function(data){
-            
-            for(var i = 0; i < data.length; i++){
-                var ranking = data[i].rank.toString();
-                var text = data[i].holder + "   Win:  " + Math.floor(data[i].winRatio) + "%";
-                $('[data-rank="' + ranking +'"]').text(text);
-
+            console.log(data);
+            for(var i = 0; i < 3; i++){
+                console.log(i);
+                if(data[i]){
+                    console.log("this");
+                    console.log($("[data-rank='"+ (i + 1) +"']"));
+                    $("[data-rank='"+ (i + 1) +"']").html(data[i].username + "<br>Wins: " + data[i].wins);
+                }else {
+                    $("[data-rank='"+ (i + 1) +"']").html("N/A");
+                };
+                
             };
 
         }
@@ -67,9 +66,24 @@ function pickWord(){
     $.ajax('/newWord', {
         type: "GET",
         success: function(data){
+            console.log(data);
 
 
-            return data;
+            var max = data.length - 1;
+            var random = Math.floor(Math.random() * ((max - 0 + 1) + 0));
+            if(wordsFinished.length === data.length){
+                wordsFinished = [];
+            };
+
+            while(wordsFinished.includes(data[random].word) || data[random].word === currentWord){
+                random = Math.floor(Math.random() * ((max - 0 + 1) + 0));
+            }
+            
+            
+
+            $(document).unbind('keyup');
+            beginGame(data[random]);
+
         }
     });
 
@@ -184,12 +198,14 @@ function beginGame(wordData){
                 $("#word").text(wordDisplayed);
 
                 if(currentWord === wordDisplayed){
+
                     wins++;
                     $("#instructions").text("Congratulations!! You won!! Press 'Enter' to play again!");
-
+                    wordsFinished.push(currentWord);
                     displayWinnings(wordData.backgroundUrl, wordData.audioPath,wordData.description);
+
                     if(user !== "N/A"){
-                    updateInfo(user,wins,loss); 
+                        updateInfo(user,wins,loss); 
                     }else {
                         prepareGame("N/A",wins,loss);
                     }
@@ -198,7 +214,7 @@ function beginGame(wordData){
             };
     
             guessedLetters.push(keyPressed);
-            var guessed = guessedLetters.join(",");
+            var guessed = guessedLetters.join(", ");
             $("#guessedLetters").text(guessed);
 
         };
@@ -267,7 +283,6 @@ function displayWinnings(background, audio, information){
 
     //Adding the source to the audio element
 
-    var audioPath = audio;
    
     $("#volume-container").css("visibility","visible");
 
