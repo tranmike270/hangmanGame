@@ -308,5 +308,45 @@
             "synopsis": "In the year 2022, gamers rejoice as Sword Art Online-a VRMMORPG (Virtual Reality Massively Multiplayer Online Role Playing Game) like no other-opens its virtual doors, allowing players to take full advantage of the ultimate in gaming technology: NerveGear, a system that allows users to completely immerse themselves in the game world by manipulating their brain waves to create a wholly realistic gaming experience. But when the game goes live, the elation of the players quickly turns to horror as they discover that, for all its amazing features, SAO is missing one of the most basic functions of any MMORPG-a log-out button. Now trapped in the virtual world of Aincrad, their bodies held captive by NerveGear in the real world, users are issued a chilling ultimatum: conquer all one hundred floors of Aincrad to regain your freedom. But in the warped world of SAO, 'game over' means certain death-both virtual and real...",
             "characters": ["Kirigaya, Kazuto","Yuuki, Asuna"]
         }
+    },
+    {
+        "word":"Darling in the FranXX",
+        "audioPath": "../assets/music/franxxMusic.mp3",
+        "backgroundUrl": "https://www.wallpaperup.com/uploads/wallpapers/2018/02/25/1210778/5c91bd2e064b69a53ed2d33f12ea7b49.jpg",
+        "description": {
+            "titles": ["DARLING in the FRANXX"],
+            "synopsis": "In the distant future, humanity has been driven to near-extinction by giant beasts known as Klaxosaurs, forcing the surviving humans to take refuge in massive fortress cities called Plantations. Children raised here are trained to pilot giant mechas known as FranXX—the only weapons known to be effective against the Klaxosaurs—in boy-girl pairs. Bred for the sole purpose of piloting these machines, these children know nothing of the outside world and are only able to prove their existence by defending their race. Hiro, an aspiring FranXX pilot, has lost his motivation and self-confidence after failing an aptitude test. Skipping out on his class' graduation ceremony, Hiro retreats to a forest lake, where he encounters a mysterious girl with two horns growing out of her head. She introduces herself by her codename Zero Two, which is known to belong to an infamous FranXX pilot known as the 'Partner Killer.' Before Hiro can digest the encounter, the Plantation is rocked by a sudden Klaxosaur attack. Zero Two engages the creature in her FranXX, but it is heavily damaged in the skirmish and crashes near Hiro. Finding her partner dead, Zero Two invites Hiro to pilot the mecha with her, and the duo easily defeats the Klaxosaur in the ensuing fight. With a new partner by his side, Hiro has been given a chance at redemption for his past failures, but at what cost?",
+            "characters": ["Zero Two","Ichigo","Hiro","Goro"]
+        }
+    },
+    {
+        "word":"Tokyo Ghoul",
+        "audioPath": "../assets/music/tokyoMusic.mp3",
+        "backgroundUrl": "https://www.wallpaperup.com/uploads/wallpapers/2018/02/25/1210778/5c91bd2e064b69a53ed2d33f12ea7b49.jpg",
+        "description": {
+            "titles": ["Tokyo Ghoul"],
+            "synopsis": "Tokyo has become a cruel and merciless city—a place where vicious creatures called “ghouls” exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh. However, the greatest threat these ghouls pose is their dangerous ability to masquerade as humans and blend in with society.",
+            "characters": ["Kaneki, Ken","Kirishima, Touka"]
+        }
+    },
+    {
+        "word":"ReLIFE",
+        "audioPath": "../assets/music/relifeMusic.mp3",
+        "backgroundUrl": "https://images6.alphacoders.com/789/thumb-1920-789005.jpg",
+        "description": {
+            "titles": ["ReLIFE"],
+            "synopsis": "Dismissed as a hopeless loser by those around him, 27-year-old Arata Kaizaki bounces around from one job to another after quitting his first company. His unremarkable existence takes a sharp turn when he meets Ryou Yoake, a member of the ReLife Research Institute, who offers Arata the opportunity to change his life for the better with the help of a mysterious pill. Taking it without a second thought, Arata awakens the next day to find that his appearance has reverted to that of a 17-year-old. Arata soon learns that he is now the subject of a unique experiment and must attend high school as a transfer student for one year. Though he initially believes it will be a cinch due to his superior life experience, Arata is proven horribly wrong on his first day: he flunks all his tests, is completely out of shape, and can't keep up with the new school policies that have cropped up in the last 10 years. Furthermore, Ryou has been assigned to observe him, bringing Arata endless annoyance. ReLIFE follows Arata's struggle to adjust to his hectic new lifestyle and avoid repeating his past mistakes, all while slowly discovering more about his fellow classmates.",
+            "characters": ["Hishiro, Chizuru","Kaizaki, Arata","Onoya, An","Kariu, Rena","Ooga, Kazuomi","Yoake, Ryou"]
+        }
+    },
+    {
+        "word":"Re Creators",
+        "audioPath": "../assets/music/recreatorMusic.mp3",
+        "backgroundUrl": "https://images3.alphacoders.com/831/thumb-1920-831571.png",
+        "description": {
+            "titles": ["Re:Creators"],
+            "synopsis": "Humans have designed countless worlds—each one born from the unique imagination of its creator. Souta Mizushino is a high school student who aspires to be such a creator by writing and illustrating his own light novel. One day, while watching anime for inspiration, he is briefly transported into a fierce fight scene. When he returns to the real world, he realizes something is amiss: the anime's headstrong heroine, Celestia Yupitilia, has somehow returned with him. Before long, other fictional characters appear in the world, carrying the hopes and scars of their home. A princely knight, a magical girl, a ruthless brawler, and many others now crowd the streets of Japan. However, the most mysterious one is a woman in full military regalia, dubbed 'Gunpuku no Himegimi,' who knows far more than she should about the creators' world. Despite this, no one knows her true name or the world she is from. Meanwhile, Souta and Celestia work together with Meteora Österreich, a calm and composed librarian NPC, to uncover the meaning behind these unnatural events. With powerful forces at play, the once clear line between reality and imagination continues to blur, leading to a fateful meeting between creators and those they created.",
+            "characters": ["Altair","Meteora","	Upitiria, Selesia","Mizushino, Souta"]
+        }
     }
 ]
